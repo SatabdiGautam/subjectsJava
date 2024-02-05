@@ -3,6 +3,7 @@ package com.satabdi.springBootCRUD.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.satabdi.springBootCRUD.bean.Subject;
 import com.satabdi.springBootCRUD.service.SubjectService;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:5173")
 public class SubjectController {
 	@Autowired
 	private SubjectService subjectService;
